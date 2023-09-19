@@ -63,7 +63,8 @@ img {
 .banner {
   max-width: 1600px;
   margin: 0 auto; /* не забывай центрирование */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 63.42px;
 }
 
@@ -229,6 +230,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .btn {
@@ -239,4 +241,200 @@ img {
   line-height: 19px;
   background: #fff;
   padding: 15px 39px;
+}
+
+@media (max-width: 1139px) and (min-width: 768px) {
+  .container {
+    max-width: 735px;
+  }
+
+  .header__all {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 16px 20px 16px;
+  }
+
+  .header__all-menu {
+    gap: 25px;
+  }
+
+  .banner {
+    max-width: 770px;
+    gap: 39px;
+  }
+
+  .content__right-side {
+    margin-top: 138.1px;
+  }
+
+  .content__right-side h1 {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+
+  .content__right-side h2 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .fashion {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .img__woman {
+    background-image: url(./img/mini_women.png);
+    width: 232px;
+    height: 168px;
+  }
+
+  .images {
+    gap: 19px;
+    margin-bottom: 109.92px;
+  }
+
+  .img__man {
+    background-image: url(./img/mini_men.png);
+    width: 232px;
+    height: 168px;
+  }
+
+  .img__kid {
+    background-image: url(./img/mini_kids.png);
+    width: 232px;
+    height: 168px;
+  }
+
+  .img__accesories {
+    background-image: url(./img/mini-accesories.png);
+    width: 735px;
+    height: 116px;
+  }
+
+  .text__images {
+    padding: 58px 39px;
+  }
+
+  .text__images__accesories {
+    padding: 33px;
+  }
+
+  .text {
+    gap: 3.3px;
+    margin-bottom: 73px;
+  }
+
+  .cards__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32.48px;
+  }
+
+  .cards__text {
+    gap: 12.65px;
+  }
+
+  .footer_btn {
+    margin-bottom: 70.52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 343px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .banner {
+    max-width: 375px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 148px;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .content__right-side {
+    padding-left: 15px;
+    margin-top: 148px;
+  }
+
+  .content__right-side h1 {
+    font-size: 38px;
+    line-height: 45.6px;
+  }
+
+  .content__right-side h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fashion {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .images {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .images h3 {
+    line-height: 19.2px;
+  }
+
+  .images h2 {
+    line-height: 28.8px;
+  }
+
+  .text__images {
+    padding: 98px 95px;
+  }
+
+  .img__accesories {
+    background-image: url(./img/accesories__mobile.png);
+    width: 343px;
+    height: 111px;
+  }
+
+  .text__images__accesories {
+    padding: 30px 92px;
+  }
+
+  .img__woman {
+    width: 343px;
+    height: 247px;
+  }
+
+  .img__man {
+    width: 344px;
+    height: 249px;
+  }
+
+  .img__kid {
+    width: 344px;
+    height: 249px;
+  }
+
+  .text {
+    gap: 3.3px;
+    margin-bottom: 65px;
+  }
+
+  .cards__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 41px;
+  }
+
+  .footer_btn {
+    margin-bottom: 85px;
+  }
 }
